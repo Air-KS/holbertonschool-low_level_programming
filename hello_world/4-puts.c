@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
 * main - Fonction principal avec void = Ne prend aucun argument
 *
 * Return: Always =  0
