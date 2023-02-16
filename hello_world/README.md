@@ -11,8 +11,8 @@
 * [Learning to program in C part 2](https://www.youtube.com/watch?v=FwpP_MsZWnU)
 * [Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA)
 * [Betty Coding Style](https://github.com/hs-hq/Betty/wiki)
-* [Hash-bang under the hood](https://twitter.com/unix_byte/status/1024147947393495040?s=21)(*Look at only after you finish consuming the other resources*)
-* [Linus Torvalds on C vs. C++](http://harmful.cat-v.org/software/c++/linus)(*Look at only after you finish consuming the other resources*)
+* [Hash-bang under the hood](https://twitter.com/unix_byte/status/1024147947393495040?s=21) (*Look at only after you finish consuming the other resources*)
+* [Linus Torvalds on C vs. C++](http://harmful.cat-v.org/software/c++/linus) (*Look at only after you finish consuming the other resources*)
 
 
 ## Man or Help in terminal
