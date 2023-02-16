@@ -16,20 +16,16 @@
 
 
 ## Man or Help in terminal
- > printenv | set | unset | export | alias | unalias | . | source | printf
+ > gcc | printf (3) | puts | putchar
  
-## Technologies
+## Technology
 * [Vim](https://doc.ubuntu-fr.org/vim/)
-* Script écrits en [Bash](https://datascientest.com/bash-tout-savoir/)
-* Tester sur Ubuntu [22.04 LTS](https://ubuntu.com/download/desktop/)
-
-## Fichiers
-Tous les script de ce projets utilise l'interpreteur [Bash](https://datascientest.com/bash-tout-savoir/).
-- `#!/bin/bash`  
+* script written in bash [Bash](https://datascientest.com/bash-tout-savoir/)
+* Tested in Ubuntu [22.04 LTS](https://ubuntu.com/download/desktop/)
   
-Voici un tableau des scripts et commande utilisé pour l'ensemble du projet Shell - Redirections and Filtre
+Here is a table of the *Scripts* and a *Description* of the *Files*.
 
-| Nom du Fichier | Description du Fichier |
+| Files | Description |
 | :--------: | :-----------: |
 | [0-preprocessor](./0-preprocessor) | Write a script that runs a `C file` through the preprocessor and save the result into another file.
 | [1-compiler](./1-compiler) | Write a script that compiles a `C file` but does not link.
