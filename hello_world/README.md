@@ -1,6 +1,6 @@
 # C - Hello, World
 
->Projet réalisé dans le cadre de l'école **[Holberton School](https://www.holbertonschool.com/).** 
+>Project carried out within the framework of the school **[Holberton School](https://www.holbertonschool.com/).** 
 
 
 ## Read or watch:
