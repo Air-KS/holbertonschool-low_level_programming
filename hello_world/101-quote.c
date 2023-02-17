@@ -1,4 +1,4 @@
-#include <unistd>;
+#include <unistd.h>
 
 /*
  * main - wrait a text 59 characters
