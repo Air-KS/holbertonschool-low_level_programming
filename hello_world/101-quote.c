@@ -1,9 +1,10 @@
 #include <unistd.h>
 
-/*
+/**
  * main - wrait a text 59 characters
  *
- *Return: 1
+ *
+ * Return: 1
  */
 
 int main(void)
