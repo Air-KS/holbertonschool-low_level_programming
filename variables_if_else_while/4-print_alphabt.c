@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Fonction principal
  *
- * Return: 0 
+ * Return: 0
  */
 
 
