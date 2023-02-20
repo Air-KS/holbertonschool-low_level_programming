@@ -2,8 +2,9 @@
 #include <stdlib.h>
 
 /*
+ * main - Fonction principal
  *
- *
+ * Return: 0
  *
  */
 
