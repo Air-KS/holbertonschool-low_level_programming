@@ -2,21 +2,22 @@
 
 <img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet.project.files/holbertonschool-low_level_programming/273/giphy-2.gif" width="100%"><br><br>
 
-# Resources
-## Read or Watch: 
+--------------------
+
+### Read or Watch: 
 
 - [Makefile](https://www.google.com/search?q=makefile)
 - [Makefiletutorial](https://makefiletutorial.com/)<br><br>
 
 --------------------
 
-## Technology used
+### Technology used
 * [Vim](https://doc.ubuntu-fr.org/vim/)
 * Tested in Ubuntu [22.04 LTS](https://ubuntu.com/download/desktop/)<br>
 
 --------------------
 
-## Requirements
+### Requirements
 - Allowed editors: `vi`, `vim`, `emacs`
 - OS: Ubuntu 20.04 LTS
 - Version of `gcc`: 9.3.0
@@ -24,17 +25,14 @@
 - All your files should end with a new line
 - A `README.md` file, at the root of the folder of the project, is mandatory
 
-
---------------------
-
 ## More Info
-## Files
+### Files
 ### The following are very important steps  
 - In the following tasks, we are going to use `these files`. We want to compile these only.
 - You can either create the files of the repository into your project folder (makefiles) and copy paste their content from github OR you can clone the **0x1B.c** repository into the **makefiles** folder.
 - If you’re going to clone it, you should enter the **makefiles** folder and **inside this folder** delete the **.git** folder using this command `rm` `-rf` `.git` then move the files from this folder into the **makefiles** folder to test your work.
-
 <br><br>
+
 # TASKS
 
 ### [0. make -f 0-Makefile ](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/makefiles/0-Makefile)
