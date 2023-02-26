@@ -45,6 +45,10 @@ Requirements:
     - The `all` rule builds your executable
 - variables: none
 
+<details>
+<summary>Test File</summary>
+<br>
+    
 ```c
 julien@ubuntu:~/Makefiles$ make -f 0-Makefile 
 gcc main.c school.c -o school
@@ -77,6 +81,7 @@ j#00000000000000w]+]++qw#00000000000000
 julien@ubuntu:~/Makefiles$ 
 
 ```
+</details>
 
 --------------------
 
@@ -90,6 +95,10 @@ Requirements:
     - `CC`: the compiler to be used  
     - `SRC`: the `.c` files
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/Makefiles$ make -f 1-Makefile
 gcc main.c school.c -o school
@@ -97,7 +106,8 @@ julien@ubuntu:~/Makefiles$ make -f 1-Makefile
 gcc main.c school.c -o school
 julien@ubuntu:~/Makefiles$
 ```
-
+</details>
+    
 ------------------------
 
 ### [2. make -f 2-Makefile](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/makefiles/2-Makefile)
@@ -116,6 +126,10 @@ Requirements:
 - The `all` rule should recompile only the updated source files  
 - You are not allowed to have a list of all the `.o` files
 
+<details>
+<summary>Test File</summary>
+<br>
+            
 ```c
 julien@ubuntu:~/Makefiles$ make -f 2-Makefile
 gcc    -c -o main.o main.c
@@ -129,7 +143,8 @@ gcc    -c -o main.o main.c
 gcc main.o school.o -o school
 julien@ubuntu:~/Makefiles$ 
 ```
-
+</details>
+        
 -------------------------
 
 ### [3. make -f 3-Makefile](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/makefiles/3-Makefile)
@@ -152,7 +167,10 @@ Requirements:
 - The `clean`, `oclean`, `fclean`, `re` rules should never fail
 - You are not allowed to have a list of all the `.o` files
 
-
+<details>
+<summary>Test File</summary>
+<br>
+    
 ```c
 julien@ubuntu:~//Makefiles$ ls -1
 0-Makefile
@@ -201,7 +219,8 @@ gcc    -c -o school.o school.c
 gcc main.o school.o -o school
 julien@ubuntu:~/Makefiles$ 
 ```
-
+</details>
+            
 -------------------------
 
 ### [4. A complete Makefile](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/makefiles/4-Makefile)
@@ -226,6 +245,10 @@ Requirements:
 - The `clean`, `oclean`, `fclean`, `re` rules should never fail  
 - You are not allowed to have a list of all the `.o` files
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/Makefiles$ make all -f 4-Makefile
 gcc -Wall -Werror -Wextra -pedantic   -c -o main.o main.c
@@ -233,7 +256,8 @@ gcc -Wall -Werror -Wextra -pedantic   -c -o school.o school.c
 gcc main.o school.o -o school
 julien@ubuntu:~/Makefiles$ 
 ```
-
+</details>
+    
 ------------------------------
 
 # Author
