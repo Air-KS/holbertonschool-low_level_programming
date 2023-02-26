@@ -51,7 +51,7 @@ To run the Betty linter just with command `betty <filename>`:
 `cd` into the Betty directory  
 - Install the linter with `sudo ./install.sh`  
 `emacs` or `vi` a new file called `betty`, and copy the script below:  
-
+    
 ```c
 #!/bin/bash
 # Simply a wrapper script to keep you from having to use betty-style
@@ -79,6 +79,7 @@ done
 - Move the betty file into /bin/ directory or somewhere else in your $PATH with sudo mv betty /bin/  <br>
 
 You can now type `betty <filename>` to run the Betty linter!  
+
 <br><br>
 # TASKS
 
@@ -88,6 +89,10 @@ You can now type `betty <filename>` to run the Betty linter!
 - The C file name will be saved in the variable `$CFILE`
 - The output should be saved in the file `c`  
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/c/$ cat main.c 
 #include <stdio.h>
@@ -108,7 +113,6 @@ julien@ubuntu:~/c/$ tail c
 
 # 2 "main.c" 2
 
-
 # 3 "main.c"
 int main(void)
 {
@@ -116,7 +120,8 @@ int main(void)
 }
 julien@ubuntu:~/c/$ 
 ```
-
+</details>
+    
 --------------------
 
 ### [1. Compiler ](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/hello_world/1-compiler)
@@ -127,6 +132,10 @@ julien@ubuntu:~/c/$
 
 *Example: if the C file is `main.c`, the output file should be `main.o`*
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/c/$ export CFILE=main.c
 julien@ubuntu:~/c/$ cat main.c
@@ -149,7 +158,8 @@ julien@ubuntu:~/c/$ cat -v main.o | head
 ^?ELF^B^A^A^@^@^@^@^@^@^@^@^@^A^@>^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^B^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@@^@^K^@^H^@UHM-^IM-eM-8^@^@^@^@]M-C^@GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609^@^T^@^@^@^@^@^@^@^AzR^@^Ax^P^A^[^L^G^HM-^P^A^@^@^\^@^@^@^\^@^@^@^@^@^@^@^K^@^@^@^@A^N^PM-^F^BC^M^FF^L^G^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^D^@M-qM-^?^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^E^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^R^@^A^@^@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@main.c^@main^@^@^@^@ ^@^@^@^@^@^@^@^B^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@.symtab^@.strtab^@.shstrtab^@.text^@.data^@.bss^@.comment^@.note.GNU-stack^@.rela.eh_frame^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[^@^@^@^A^@^@^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@!^@^@^@^A^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@'^@^@^@^H^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@,^@^@^@^A^@^@^@0^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@5^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@5^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@J^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@8^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@E^@^@^@^D^@^@^@@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M- ^A^@^@^@^@^@^@^X^@^@^@^@^@^@^@    ^@^@^@^F^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@^Q^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^A^@^@^@^@^@^@T^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^@^@^@^@^@^@^@M-X^@^@^@^@^@^@^@
 ^@^@^@^H^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@  ^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^P^A^@^@^@^@^@^@^M^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@julien@ubuntu:~/c/$ 
 ```
-
+</details>
+    
 ------------------------
 
 ### [2. Assembler ](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/hello_world/2-assembler)
@@ -160,6 +170,10 @@ julien@ubuntu:~/c/$ cat -v main.o | head
 
 *Example: if the C file is `main.c`, the output file should be `main.s`*
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/c/$ export CFILE=main.c
 julien@ubuntu:~/c/$ cat main.c
@@ -201,7 +215,8 @@ main:
     .section    .note.GNU-stack,"",@progbits
 julien@ubuntu:~/c/$ 
 ```
-
+</details>
+    
 -------------------------
 
 ### [3. Name ](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/hello_world/3-name)
@@ -209,6 +224,10 @@ julien@ubuntu:~/c/$
 > Write a script that compiles a C file and creates an executable named cisfun.
 - The C file name will be saved in the variable `$CFILE`
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/c/$ export CFILE=main.c
 julien@ubuntu:~/c/$ cat main.c
@@ -229,7 +248,8 @@ julien@ubuntu:~/c/$ ls
 100-intel       2-assembler  c       main.c  main.s
 julien@ubuntu:~/c/$ 
 ```
-
+</details>
+    
 -------------------------
 
 ### [4. Hello, puts](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/hello_world/4-puts.c)
@@ -239,6 +259,10 @@ julien@ubuntu:~/c/$
 - You are not allowed to use `printf`  
 - Your program should end with the value `0`  
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/c/$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out
 "Programming is like building a multilingual puzzle
@@ -246,7 +270,8 @@ julien@ubuntu:~/c/$ echo $?
 0
 julien@ubuntu:~/c/$ 
 ```
-
+</details>
+    
 --------------------------
 
 ### [5. Hello, printf](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/hello_world/5-printf.c)
@@ -257,6 +282,10 @@ julien@ubuntu:~/c/$
 - Your program should return `0`  
 - Your program should compile without warning when using the `-Wall gcc option`  
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c++
 julien@ubuntu:~/c/$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c
 julien@ubuntu:~/c/$ ./a.out 
@@ -265,7 +294,8 @@ julien@ubuntu:~/c/$ echo $?
 0
 julien@ubuntu:~/c/$ 
 ```
-
+</details>
+    
 -------------------------
 
 ### [6. Size is not grandeur, and territory does not make a nation](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/hello_world/6-size.c)
@@ -276,7 +306,11 @@ julien@ubuntu:~/c/$
 - Your program should return `0`  
 - You might have to install the package `libc6-dev-i386` on your Linux (Vagrant) to test the `-m32` `gcc` option  
 
-```
+<details>
+<summary>Test File</summary>
+<br>
+        
+```c
 julien@ubuntu:~/c/$ gcc 6-size.c -m32 -o size32 2> /tmp/32
 julien@ubuntu:~/c/$ gcc 6-size.c -m64 -o size64 2> /tmp/64
 julien@ubuntu:~/c/$ ./size32
@@ -295,7 +329,8 @@ julien@ubuntu:~/c/$ echo $?
 0
 julien@ubuntu:~/c/$ 
 ```
-
+</details>
+    
 ---------------------
 
 ### [7. Intel ](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/hello_world/100-intel)
@@ -306,7 +341,11 @@ julien@ubuntu:~/c/$
 
 *Example: if the C file is `main.c`, the output file should be `main.s`*
 
-```
+<details>
+<summary>Test File</summary>
+<br>
+        
+```c
 julien@ubuntu:~/c/$ export CFILE=main.c
 julien@ubuntu:~/c/$ cat main.c
 #include <stdio.h>
@@ -346,6 +385,7 @@ main:
     .section    .note.GNU-stack,"",@progbits
 julien@ubuntu:~/c/$ 
 ```
+</details>
 
 -------------------------
 
@@ -356,6 +396,10 @@ julien@ubuntu:~/c/$
 - Your program should return 1  
 - Your program should compile without any warnings when using the `-Wall` `gcc` option  
 
+<details>
+<summary>Test File</summary>
+<br>
+        
 ```c
 julien@ubuntu:~/c/$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
 julien@ubuntu:~/c/$ ./quote
@@ -369,6 +413,7 @@ julien@ubuntu:~/c/$ grep printf < 101-quote.c
 julien@ubuntu:~/c/$ grep put < 101-quote.c
 julien@ubuntu:~/c/$ 
 ```
+</details>
 
 ------------------------------
 
