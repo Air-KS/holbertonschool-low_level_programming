@@ -16,8 +16,6 @@
 - [while loop in C](https://www.tutorialspoint.com/cprogramming/c_while_loop.htm)
 - [While loop](https://www.youtube.com/watch?v=Ju1LYO9pkaI)
 
-<br><br>
-
 --------------------
 
 ## Man or Help
