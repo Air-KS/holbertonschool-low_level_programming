@@ -21,7 +21,7 @@ int **alloc_grid(int width, int height)
 	if (tab == NULL)
 		return (NULL);
 
-	for (index = 0; index < height; index++)
+	for (index = 0; index < height; ++index)
 	{
 		*(tab + index) = malloc(sizeof(int *) * width);
 
