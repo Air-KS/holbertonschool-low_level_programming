@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
+* _calloc - function that creates an array of integers.
+* @nmemb: L'élément
+* @size: La taille
 *
-*
+* Return: ptr
 */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -20,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	memoire = ptr;
-	
+
 	for (index = 0; index < (size * nmemb); index++)
 	memoire[index] = '\0';
 
