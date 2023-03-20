@@ -3,6 +3,7 @@
 
 /**
 * init_dog - function that initialize a variable of type struct dog
+* @d: pointer
 * @name: dog name
 * @age: dog age
 * @owner: dog owner
