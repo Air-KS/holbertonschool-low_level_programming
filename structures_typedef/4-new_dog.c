@@ -14,7 +14,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	/* Alloue de la mémoire pour le nouveau chien */
-	dog_t *new_dog = malloc(sizeof(dog_t) + 1);
+	dog_t *new_dog = malloc(sizeof(dog_t));
 
 	if (!new_dog)
 	/* Échec de l'allocation de mémoire */
