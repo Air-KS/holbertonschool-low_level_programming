@@ -19,8 +19,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (!new_dog)
 	/* Échec de l'allocation de mémoire */
 		return (NULL);
-	
-	free(new_dog);
 
 	/* Copie les chaînes de caractères pour le nom et le propriétaire */
 	new_dog->name = strdup(name);
