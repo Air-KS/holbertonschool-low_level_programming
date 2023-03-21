@@ -15,5 +15,4 @@ void print_name(char *name, void (*f)(char *))
 	/* utilise le pointer de focntion f pour appeler name*/
 	/* f(name); est pareil que => (*f)(name) */
 	(*f)(name);
-
 }
