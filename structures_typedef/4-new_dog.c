@@ -3,6 +3,23 @@
 #include <string.h>
 
 /**
+*
+*
+*
+*/
+char *_strcopy(char *dest, char *source)
+{
+	int index = 0;
+
+	for (index = 0; source[index] != '\0'; index++)
+	{
+		dest [index] = source[index];
+	}
+	dest[index] = '\0';
+	return (dest);
+}
+
+/**
 * new_dog - function that creates a new dog
 * @name: dog name
 * @age: dog age
@@ -13,19 +30,36 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	/* Alloue de la mémoire pour le nouveau chien */
-	dog_t *new_dog = malloc(sizeof(dog_t));
+	dog_t *ptr;
 
-	if (!new_dog)
+	/* Alloue de la mémoire pour le nouveau chien */
+	ptr = malloc(sizeof(dog_t));
+
+	if (ptr == NULL)
 	/* Échec de l'allocation de mémoire */
 		return (NULL);
 
+	(*ptr).name = malloc(sizeof(name) + 1);
+	if (name == NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
+
+	(*ptr).owner = malloc(sizeof(owner) + 1);
+	if ((*ptr).owner == NULL)
+	{
+		free((*ptr).name);
+		free(ptr);
+		return (NULL);
+	}
+
 	/* Copie les chaînes de caractères pour le nom et le propriétaire */
-	new_dog->name = strdup(name);
-	new_dog->owner = strdup(owner);
+	_strcopy((*ptr).name, name);
+	_strcopy((*ptr).owner, owner);
 
 	/* Définit l'âge */
-	new_dog->age = age;
+	(*ptr).age = age;
 
-	return (new_dog);
+	return (ptr);
 }
