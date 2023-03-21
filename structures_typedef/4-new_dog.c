@@ -3,9 +3,11 @@
 #include <string.h>
 
 /**
+* _strcopy - copy string
+* @dest: pointer to test - destination
+* @source: pointer to test - Source
 *
-*
-*
+* Return: dest
 */
 char *_strcopy(char *dest, char *source)
 {
@@ -13,7 +15,7 @@ char *_strcopy(char *dest, char *source)
 
 	for (index = 0; source[index] != '\0'; index++)
 	{
-		dest [index] = source[index];
+		dest[index] = source[index];
 	}
 	dest[index] = '\0';
 	return (dest);
