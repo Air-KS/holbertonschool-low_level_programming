@@ -9,11 +9,11 @@
 void print_name(char *name, void (*f)(char *))
 {
 	/* Verifi si name ou f ne sont pas NULL*/
-	if (!f)
+	if (name == NULL || f == NULL)
 		return;
 
 	/* utilise le pointer de focntion f pour appeler name*/
 	/* f(name); est pareil que => (*f)(name) */
-	f(name);
+	(*f)(name);
 
 }
