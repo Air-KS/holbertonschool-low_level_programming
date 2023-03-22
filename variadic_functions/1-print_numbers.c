@@ -10,7 +10,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int index;
-	va_list arguments; /* Déclare une variable de type va_list */
+	va_list arguments; /* Déclare une variable de type va_list nommé Arguments*/
 
 	/* Initialise la Variable args */
 	va_start(arguments, n);
