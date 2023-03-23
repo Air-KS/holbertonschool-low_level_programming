@@ -1,13 +1,16 @@
 #ifndef PROTOTYPE
 #define PROTOTYPE
 
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
 * struct op - Struct op
 * @op: - The operator
 * @f: -The function associated
 */
 
-typedef struc op
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
