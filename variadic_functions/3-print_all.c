@@ -32,9 +32,12 @@ void print_all(const char * const format, ...)
 
 			case 's':
 			string = va_arg(argument, char *);
-			if (string == NULL)
+
+			while (string == NULL)
+			{
 				printf("(nil)"); /* Si la chaine est Null Affiche (nil)*/
-			else
+			}
+				
 				printf("%s", string); /* Sinon, affiche la chaines */
 			break;
 
