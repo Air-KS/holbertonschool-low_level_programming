@@ -32,6 +32,7 @@ void print_all(const char * const format, ...)
 				if (string == NULL)
 				{
 					printf("(nil)"); /* La chaine est Null Affiche (nil)*/
+					continue;
 				}
 				printf("%s", string); /* Sinon, affiche la chaines */
 				break;
