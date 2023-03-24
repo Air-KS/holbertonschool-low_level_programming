@@ -19,29 +19,23 @@ void print_all(const char * const format, ...)
 		switch (format[index])
 		{
 			case 'c':
-			printf("%c", va_arg(argument, int));
+				printf("%c", va_arg(argument, int));
 			break;
-
 			case 'i':
-			printf("%d", va_arg(argument, int));
+				printf("%d", va_arg(argument, int));
 			break;
-
 			case 'f':
-			printf("%f", va_arg(argument, double));
+				printf("%f", va_arg(argument, double));
 			break;
-
 			case 's':
-			string = va_arg(argument, char *);
-
-			while (string == NULL)
-			{
-				printf("(nil)"); /* Si la chaine est Null Affiche (nil)*/
-			}
-				
+				string = va_arg(argument, char *);
+				if (string == NULL)
+				{
+					printf("(nil)"); /* La chaine est Null Affiche (nil)*/
+				}
 				printf("%s", string); /* Sinon, affiche la chaines */
-			break;
-
-		default:
+				break;
+			default:
 			index++;
 			continue; /* Ignore tout autre caractère */
 		}
