@@ -1,6 +1,6 @@
 # <p align="Center">C - malloc, free</p>
 
-<img align="center" src="https://www.learnpick.in/userfiles/resources_conversion_files/presentationdma1445368744140676-3.jpg" height="720p" width="90%"><br><br>
+<img align="center" src="https://www.learnpick.in/userfiles/resources_conversion_files/presentationdma1445368744140676-3.jpg" height="720p" width="100%"><br><br>
 
 # Resources
 ## Read or Watch: 
