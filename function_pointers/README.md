@@ -30,9 +30,9 @@
 - The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `function_pointers.h`
 - Don’t forget to push your header file
 - All your header files should be include guarded
-
 --------------------
-<br><br>
+<br>
+
 # Prototype
 ### [function_pointers.h](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/function_pointers/function_pointers.h)
 <details>
@@ -352,6 +352,8 @@ julien@ubuntu:~/0x0e. Function pointers$
 
 > This task requires that you create four different files.
 
+<br>
+
 ## [`3-calc.h`](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/function_pointers/3-calc.h)
 
 > This file should contain all the function prototypes and data structures used by the program. You can use this structure:
@@ -379,8 +381,6 @@ typedef struct op
 
 ## [3-op_functions.c](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/function_pointers/3-op_functions.c)
 
-<br>
-
 > This file should contain the 5 following functions (not more):
 
 - `op_add`: returns the sum of `a` and `b`. Prototype: `int op_add(int a, int b);`
@@ -388,10 +388,10 @@ typedef struct op
 - `op_mul`: returns the product of `a` and `b`. Prototype: `int op_mul(int a, int b);`
 - `op_div`: returns the result of the division of `a` by `b`. Prototype: `int op_div(int a, int b);`
 - `op_mod`: returns the remainder of the division of `a` by `b`. Prototype: `int op_mod(int a, int b);`
-<br><br>
+
+<br>
 
 ## [3-get_op_func.c](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/function_pointers/3-op_functions.c)
-<br>
 
 > This file should contain the function that selects the correct function to perform the operation asked by the user. You’re not allowed to declare any other function.
 
@@ -427,7 +427,6 @@ op_t ops[] = {
 <br>
 
 ## [3-main.c](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/function_pointers/3-main.c)
-<br>
 
 > This file should contain your `main` function only.
 
