@@ -354,7 +354,7 @@ julien@ubuntu:~/0x0e. Function pointers$
 
 <br>
 
-## [`3-calc.h`](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/function_pointers/3-calc.h)
+## [3-calc.h](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/function_pointers/3-calc.h)
 
 > This file should contain all the function prototypes and data structures used by the program. You can use this structure:
 
