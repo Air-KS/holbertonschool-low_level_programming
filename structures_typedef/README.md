@@ -40,11 +40,13 @@
 - Don’t forget to push your header file
 - All your header files should be include guarded
 --------------------
-<br><br>
+
+<br>
+
 # Prototype
 ### [dog.h](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/structures_typedef/dog.h)
 <details>
-<summary>Prototype File</summary>
+<summary>Prototype File - dog.h</summary>
 <br>
 
 ```h
