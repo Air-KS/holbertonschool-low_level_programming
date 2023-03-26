@@ -3,11 +3,13 @@
 <br><br>
 
 # Resources
-> In C programming, functions are code blocks that perform a specific task and can be repeatedly called from other parts of the program. C functions can take input parameters and return a value as output if necessary.  <br>
-Nested loops, also known as loops within loops, are control structures that allow a series of instructions to be repeated multiple times, using loops inside other loops. This can be useful for traversing multidimensional arrays or performing repetitive operations on structured data.  <br>
-By combining functions and nested loops, programmers can write C programs that perform complex tasks in an efficient and organized manner. Functions can be used to encapsulate specific functionality, while nested loops can be used to traverse data or perform repetitive operations on a large scale.  
-<br>
-Overall, functions and nested loops are key elements of C programming that enable programmers to create sophisticated and efficient programs.
+> In C programming, functions are code blocks that perform a specific task and can be repeatedly called from other parts of the program. C functions can take input parameters and return a value as output if necessary.  
+
+> Nested loops, also known as loops within loops, are control structures that allow a series of instructions to be repeated multiple times, using loops inside other loops. This can be useful for traversing multidimensional arrays or performing repetitive operations on structured data.  
+
+> By combining functions and nested loops, programmers can write C programs that perform complex tasks in an efficient and organized manner. Functions can be used to encapsulate specific functionality, while nested loops can be used to traverse data or perform repetitive operations on a large scale.  
+
+> Overall, functions and nested loops are key elements of C programming that enable programmers to create sophisticated and efficient programs.
 
 <br>
 
