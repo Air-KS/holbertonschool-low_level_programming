@@ -88,8 +88,6 @@ void free_dog(dog_t *d);
 
 ### [0. Poppy](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/argc_argv/0-whatsmyname.c)
 
-<img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2021/3/3b534d73d79949ef8b7535d462014518256953f2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20230326%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230326T103632Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=eefdecc3706f041c69d75da7353aedb771066ee77bc6fbab0aa1a968d56ddedf" height="20%" width="20%"><br>
-
 > Define a new type struct dog with the following elements:
 
 - `name`, type = `char *`
@@ -172,8 +170,6 @@ julien@ubuntu:~/0x0d. structures, typedef$
 
 ### [2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/structures_typedef/2-print_dog.c)
 
-<img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2021/3/bb940d2ab10c3a4740f3c154cb980133e65e438e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20230326%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230326T103633Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9f326a73690a439bb0be8a56c2ddec03a398d2840587db3831425b30b21dea03" height="20%" width="20%"><br><br>
-
 > Write a function that prints a `struct dog`
 
 - Prototype: `void print_dog(struct dog *d);`
@@ -222,8 +218,6 @@ julien@ubuntu:~/0x0d. structures, typedef$
 
 ### [3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read ](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/structures_typedef/dog.h)
 
-<img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2021/3/9ef84b3fd1636992602868e45d3062719326de0e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20230326%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230326T103633Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=06b0b80f25d380f5f801132e67d555be41ea2189ac0ec85859d52acb4ebccc08" height="20%" width="20%"><br>
-
 > Define a new type `dog_t` as a new name for the type `struct dog`.
 
 - File: `dog.h`
@@ -262,8 +256,6 @@ julien@ubuntu:~/0x0d. structures, typedef$
 -------------------------
 
 ### [4. A door is what a dog is perpetually on the wrong side of ](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/structures_typedef/dog.h)
-
-<img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2021/3/8c1e394774fb8d25e0bbbb73a75ebc7de0c80745.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20230326%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230326T103633Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=bfea7c8aefe8da9a1f98176e6e192ab509f91cc4a999c23c05be9e517eb312ef" height="20%" width="20%"><br>
 
 > Write a function that creates a new dog.
 
@@ -306,8 +298,6 @@ julien@ubuntu:~/0x0d. structures, typedef$
 ------------------------------
 
 ### [5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/structures_typedef/5-free_dog.c)
-
-<img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2021/3/683112dbdd805c36a9b366cede0653dd80da5ec3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20230326%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230326T103633Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=55cc9dab0bb8bc620ef6c8635efebbbcce7659e3ca7e957d61c7947bf6e01b6d" height="20%" width="20%"><br>
 
 > Write a function that frees dogs.
 
