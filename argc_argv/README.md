@@ -5,11 +5,11 @@
 # Resources
 > `argc` and `*argv[]` are two commonly used parameters in `C` and `C++` programs. They are often used to pass arguments to a program from the command line.
 
-- `argc` represents the number of arguments passed to a program from the command line. The first argument `(argument 0)` is usually the name of the program itself, followed by zero or more additional arguments.
+- `argc` represents the number of arguments passed to a program from the command line. The first argument (argument 0) is usually the name of the program itself, followed by zero or more additional arguments.
 
-- `argv[]` is an `array` of `strings` that contains the arguments passed to a program from the command line. Each element of the `array` corresponds to a passed argument, and the first element `(element 0)` always contains the program name.
+- `argv[]` is an array of strings that contains the arguments passed to a program from the command line. Each element of the array corresponds to a passed argument, and the first element (element 0) always contains the program name.
 
-> Therefore, `argc` `*argv[]` is a `two-dimensional` `array` pointer. The first `dimension` corresponds to the number of arguments passed `(argc)` and the second `dimension` is an `array` of string pointers `(argv[])`, which contains the arguments themselves.  
+> Therefore, `argc` `*argv[]` is a two-dimensional array pointer. The first dimension corresponds to the number of arguments passed `(argc)` and the second dimension is an array of string pointers `(argv[])`, which contains the arguments themselves.  
 
 <br>
 
