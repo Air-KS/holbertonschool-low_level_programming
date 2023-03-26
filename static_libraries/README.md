@@ -95,7 +95,7 @@ Static libraries in C can be a great way to reuse code and improve the performan
 # Prototype
 ### [main.h](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/static_libraries/main.h)
 <details>
-<summary>Prototype File - main.h.h</summary>
+<summary>Prototype File - main.h</summary>
 <br>
 
 ```h
