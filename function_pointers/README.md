@@ -3,6 +3,24 @@
 <img src="https://cdn.educba.com/academy/wp-content/uploads/2020/03/Function-Pointer-in-C.jpg.webp" width="100%"><br><br>
 
 # Resources
+> In C programming, a function pointer is a variable that stores the address of a function.  
+A function pointer can be used to call the function it points to or to pass it as an argument to another function.  
+The syntax for declaring a function pointer is similar to that for declaring a function, except that the function name is replaced with an asterisk (*) to indicate that it is a pointer.  
+The declaration of a function pointer looks like this:  
+```
+int (*myFuncPtr)(int, int);
+```
+> This command in C declares a function pointer called myFuncPtr.  
+This function pointer can point to a function that takes two integer arguments and returns an integer.  
+The command starts with the return type of the function, which is int in this case. Then, it uses a pair of parentheses to surround the name of the function pointer, myFuncPtr.  
+This part of the command declares that myFuncPtr is a function pointer.  
+After that, the command uses an asterisk (*) to indicate that myFuncPtr is a pointer.  
+The pointer is declared to point to a function that takes two integer arguments, each of type int.  
+These arguments are separated by a comma. The command ends with the return type of the function, which is also int.  
+In summary, this command declares a function pointer myFuncPtr that can point to a function that takes two integer arguments and returns an integer.  
+
+<br>
+
 ## Read or Watch: 
 
 - [Function Pointer in C](https://www.geeksforgeeks.org/function-pointer-in-c/)
