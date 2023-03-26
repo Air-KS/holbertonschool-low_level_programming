@@ -1,8 +1,18 @@
-# <p align="Center">C - Functions, nested loops</p>
+# <p align="Center">C - Variables, if, else, while</p>
+
+<img amign="center" src="https://www.mycplus.com/mycplus/wp-content/uploads/2008/09/Conditional_Statements.png" height="100%" width="100%"><br><br>
 
 <br><br>
 
 # Resources
+> Variables are named containers for storing data in a computer program. They can hold different types of data, such as integers, floating-point numbers, characters, and strings. In C programming language, a variable must be declared before it can be used. This means specifying the variable's data type and name.
+
+> The if-else statement is a conditional statement that allows a program to make decisions based on a condition. It works by evaluating a condition and then executing a block of code if the condition is true, or executing a different block of code if the condition is false.
+
+> The while loop is a control structure that allows a program to repeatedly execute a block of code as long as a condition is true. It works by evaluating a condition before each iteration of the loop and then executing the loop body if the condition is true. The loop continues to execute as long as the condition remains true.
+
+<br>
+
 ## Read or Watch: 
 - [Everything you need to know to start with C.pdf](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/misc/2021/1/42507f7938ddf9b8963bc903bac7d75f88ca8881.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20230226%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230226T162835Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=396296e1821ceae2a80a0170f22867a398f1264613a4dbd564158f65a019128d)(*You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”*.)
 - [Keywords and identifiers](https://publications.gbdirect.co.uk//c_book/chapter2/keywords_and_identifiers.html)
@@ -312,89 +322,6 @@ julien@ubuntu:~/$
 julien@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-print_comb.c -o 9-print_comb
 julien@ubuntu:~/$ ./9-print_comb | cat -e
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9$
-julien@ubuntu:~/$ 
-```
-</details>
-
--------------------------
-
-### [10. a + b](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/functions_nested_loops/10-add.c)
-
-> Write a function that adds two integers and returns the result.
-
-- Prototype: `int add(int, int);`
-
-<details>
-<summary>Test File</summary>
-<br>
-
-```c
-julien@ubuntu:~/$ cat 10-main.c
-#include "main.h"
-#include <stdio.h>
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int n;
-
-    n = add(89, 9);
-    printf("%d\n", n);
-    return (0);
-}
-julien@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 10-main.c 10-add.c -o 10-add
-julien@ubuntu:~/$ ./10-add 
-98
-julien@ubuntu:~/$ 
-```
-</details>
-
--------------------------
-
-### [11. 98 Battery Street, the OG](https://github.com/Air-KS/holbertonschool-low_level_programming/blob/main/functions_nested_loops/11-print_to_98.c)
-
-> Write a function that prints all natural numbers from n to 98, followed by a new line.
-
-- Prototype: void print_to_98(int n);
-- Numbers must be separated by a comma, followed by a space
-- Numbers should be printed in order
-- The first printed number should be the number passed to your function
-- The last printed number should be 98
-- You are allowed to use the standard library
-
-<details>
-<summary>Test File</summary>
-<br>
-
-```c
-julien@ubuntu:~/$ cat 11-main.c
-#include "main.h"
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_to_98(0);
-    print_to_98(98);
-    print_to_98(111);
-    print_to_98(81);
-    print_to_98(-10);
-    return (0);
-}
-julien@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 11-main.c 11-print_to_98.c -o 11-98
-julien@ubuntu:~/$ ./11-98 
-0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
-98
-111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98
-81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
--10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
 julien@ubuntu:~/$ 
 ```
 </details>
