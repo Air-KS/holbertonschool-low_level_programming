@@ -1,5 +1,7 @@
 # <p align="Center">C - Functions, nested loops</p>
 
+<img src="https://cdn.educba.com/academy/wp-content/uploads/2020/02/nested-loop-in-c.jpg" width="100%"><br><br>
+
 <br><br>
 
 # Resources
