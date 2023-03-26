@@ -2,7 +2,7 @@
 
 <img amign="center" src="https://www.mycplus.com/mycplus/wp-content/uploads/2008/09/Conditional_Statements.png" height="100%" width="100%"><br><br>
 
-<br><br>
+<br>
 
 # Resources
 > Variables are named containers for storing data in a computer program. They can hold different types of data, such as integers, floating-point numbers, characters, and strings. In C programming language, a variable must be declared before it can be used. This means specifying the variable's data type and name.
