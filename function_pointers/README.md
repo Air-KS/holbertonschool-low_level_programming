@@ -7,7 +7,7 @@
 A function pointer can be used to call the function it points to or to pass it as an argument to another function.  
 The syntax for declaring a function pointer is similar to that for declaring a function, except that the function name is replaced with an asterisk (*) to indicate that it is a pointer.  
 The declaration of a function pointer looks like this:  
-```
+```c
 int (*myFuncPtr)(int, int);
 ```
 > This command in C declares a function pointer called myFuncPtr.  
