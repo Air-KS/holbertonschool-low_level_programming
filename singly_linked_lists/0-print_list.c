@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
+* print_list - function that prints all the elements of a list_t list.
+* @h: pointer const to structur list_t
 *
-*
-*
+* Return: counter
 */
 
 size_t print_list(const list_t *h)
