@@ -6,7 +6,7 @@
 * Return: returns string length
 */
 
-int get_length (const char *str)
+int get_length(const char *str)
 {
 	int length;
 
@@ -22,6 +22,7 @@ int get_length (const char *str)
 * @str: takes in a string
 * Return: pointer to the head
 */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
@@ -29,9 +30,8 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (head == NULL)
 		return (0);
-	
 
-	new_node = malloc (sizeof(list_t));
+	new_node = malloc(sizeof(list_t));
 
 	if (new_node == NULL)
 		return (0);
