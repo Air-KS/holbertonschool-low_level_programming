@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* get_dnodeint_at_index -  function that adds a new node at the beginning
+* get_dnodeint_at_index - Function that returns the nth node of a dlistint_t
 * @head: Pointer
 * @index: Index
 *
