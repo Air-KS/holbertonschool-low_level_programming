@@ -1,94 +1,73 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
+#include "main.h"
 #include <errno.h>
 
 #define BUFFER_SIZE 1024
 
 /**
-* open_file - Opens a file using the "open" function of the standard C library
-* @filename: name file
-* @flags: flag
-* @mode: mode
-*
-* Return: fileDescriptor
-*/
-int open_file(char *filename, int flags, mode_t mode)
+ * __exit - prints error messages and exits with exit value
+ * @error: num is either exit value or file descriptor
+ * @s: str is a name, either of the two filenames
+ * @fd: file descriptor
+ * Return: 0 on success
+ **/
+int __exit(int error, char *s, int fd)
 {
-	int fileDescriptor = open(filename, flags, mode);
-
-	if (fileDescriptor == -1)
+	switch (error)
 	{
-		perror(filename);
-		exit(1);
-	}
-	return (fileDescriptor);
-}
-
-/**
-* close_file - Close file
-* @fileDescriptor: fileDescriptor
-*
-*/
-void close_file(int fileDescriptor)
-{
-	if (close(fileDescriptor) == -1)
-	{
-		perror("close");
-		exit(1);
+	case 97:
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(error);
+	case 98:
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", s);
+		exit(error);
+	case 99:
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", s);
+		exit(error);
+	case 100:
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		exit(error);
+	default:
+		return (0);
 	}
 }
 
 /**
-* copy_file - copy file
-* @file_from: file from
-* @file_to: file to
-*
-*/
-void copy_file(char *file_from, char *file_to)
-{
-	int fileDescriptor_from, fileDescriptor_to, read_bytes;
-	char buffer[BUFFER_SIZE];
-
-	fileDescriptor_from = open_file(file_from, O_RDONLY, 0);
-	fileDescriptor_to = open_file(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-
-	while ((read_bytes = read(fileDescriptor_from, buffer, BUFFER_SIZE)) > 0)
-	{
-		if (write(fileDescriptor_to, buffer, read_bytes) != read_bytes)
-		{
-			perror(file_to);
-			exit(1);
-		}
-	}
-
-	if (read_bytes == -1)
-	{
-		perror(file_from);
-		exit(1);
-	}
-
-	close_file(fileDescriptor_from);
-	close_file(fileDescriptor_to);
-}
-
-/**
-* main - main function
-* @argc: argc
-* @argv: argv
-*
-* Return: 0
-*/
+ * main - copies one file to another
+ * @argc: should be 3 (./a.out copyfromfile copytofile)
+ * @argv: first is file to copy from (fd_1), second is file to copy to (fd_2)
+ * Return: 0 (success), 97-100 (exit value errors)
+ */
 int main(int argc, char *argv[])
 {
+	int fd_1, fd_2, n_read, n_wrote;
+	char *buffer[1024];
+
 	if (argc != 3)
+		__exit(97, NULL, 0);
+
+	/*sets file descriptor for copy-to file*/
+	fd_2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	if (fd_2 == -1)
+		__exit(99, argv[2], 0);
+
+	/*sets file descriptor for copy-from file*/
+	fd_1 = open(argv[1], O_RDONLY);
+	if (fd_1 == -1)
+		__exit(98, argv[1], 0);
+
+	/*reads original file as long as there's more than 0 to read*/
+	/*copies/writes contents into new file */
+	while ((n_read = read(fd_1, buffer, 1024)) != 0)
 	{
-		fprintf(stderr, "Usage: %s file_from file_to\n", argv[0]);
-		exit(1);
+		if (n_read == -1)
+			__exit(98, argv[1], 0);
+
+		n_wrote = write(fd_2, buffer, n_read);
+		if (n_wrote == -1)
+			__exit(99, argv[2], 0);
 	}
 
-	copy_file(argv[1], argv[2]);
-
+	close(fd_2) == -1 ? (__exit(100, NULL, fd_2)) : close(fd_2);
+	close(fd_1) == -1 ? (__exit(100, NULL, fd_1)) : close(fd_1);
 	return (0);
 }
